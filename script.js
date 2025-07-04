@@ -1,0 +1,27 @@
+const button1=document.querySelector(".bt1");
+const button2=document.querySelector(".bt2");
+const button3=document.querySelector(".bt3");
+const div1=document.querySelector(".a1");
+const div2=document.querySelector(".a2");
+const div3=document.querySelector(".a3");
+
+function guess(div)
+{
+    div.style.backgroundColor=  `rgb(${Math.floor(Math.random() * 256)}, 
+    ${Math.floor(Math.random() * 256)}, 
+    ${Math.floor(Math.random() * 256)})`;
+}
+
+button1.addEventListener("click",function(){
+    guess(div1);
+});
+
+button2.addEventListener("click",function(){
+    guess(div2);
+});
+
+button3.addEventListener("click",function(){
+    guess(div3);
+});
+
+
